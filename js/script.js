@@ -4,7 +4,7 @@ import TabNav from "./modules/tabnav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import fetchAnimais from "./modules/fetch-animais.js";
-import fetchBtc from "./modules/fetch-btc.js";
+import fetchBitcoin from "./modules/fetch-btc.js";
 
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
@@ -34,7 +34,7 @@ const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
 fetchAnimais("../../json/animaisapi.json", ".numeros-grid");
-fetchBtc("https://blockchain.info/ticker", ".btc-preco");
+fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
 initDropdownMenu();
 initMenuMobile();

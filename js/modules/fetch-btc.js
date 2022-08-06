@@ -1,4 +1,4 @@
-export default function fetchBtc(url, target) {
+export default function fetchBitcoin(url, target) {
   fetch(url)
     .then((r) => r.json())
     .then((bitcoin) => {
