@@ -1,5 +1,5 @@
 {
-  "name": "atualizando-projeto-com-eslint",
+  "name": "animais-fantasticos",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch"
   },
-  "author": "",
+  "author": "Pablo Santos",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.10",
