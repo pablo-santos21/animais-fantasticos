@@ -3,11 +3,11 @@ import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tabnav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
+import fetchAnimais from "./modules/fetch-animais.js";
 
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/horario.js";
-import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBtc from "./modules/fetch-btc.js";
 import initAnimacaoScroll from "./modules/scroll-animacao.js";
 
@@ -33,9 +33,10 @@ modal.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
+fetchAnimais("../../json/animaisapi.json", ".numeros-grid");
+
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
-initFetchAnimais();
 initFetchBtc();
 initAnimacaoScroll();
